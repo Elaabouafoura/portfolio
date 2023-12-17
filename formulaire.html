@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>formulaire</title>
+  
+  <title>Formulaire</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header>
+<header>
     <h1>Welcome to My Portfolio</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="parcourAcademique.html">Parcours Académique</a></li>
-        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="parcourAcademique.html">Parcours Academique</a></li>
+        <li><a href="experience.html">Experience</a></li>
         <li><a href="contact.html">Contact</a></li>
 		<li><a href="formulaire.html">formulaire</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>Formulaire</h2>
-    <p>Vous pouvez aussi remplir ce formulaire pour me contacter .</p>
-  <input type="checkbox"> 
-<label> Je ne suis pas un robot : </label>
+  <form id="myForm">
+    <label for="robot">Je ne suis pas un robot :</label>
+    <input type="checkbox" id="robot"> 
+    <img src="./robot.png" alt="Your Image" width="30" height="30"> <br>
 
-<img src="./robot.png" alt="Your Image" width="30" height="30"> <br>
-<label>   Nom : </label>
-<input type="text"> <br>
-<label>   email : </label>
-<input type="email" > <br>
-<label>   num tel : </label>
-<input type="num tel"> <br>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom"> <br>
 
-<label>  appreciez-vous le cv ?: </label>
-<input type="radio" name=""> oui
-<input type="radio" name=""> non <br>
-<input type="submit" value="Envoyer"> <br>
-</main>
-  <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-  </footer>
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom"> <br>
 
+    <label for="email">Email :</label>
+    <input type="email" id="email"> <br>
+
+    <label for="numTel">Numéro de téléphone :</label>
+    <input type="tel" id="numTel"> <br>
+
+    <label>Appréciez-vous le CV ? :</label>
+    <input type="radio" name="appreciation" id="oui"> <label for="oui">Oui</label>
+    <input type="radio" name="appreciation" id="non"> <label for="non">Non</label> <br>
+
+    <input type="submit" value="Envoyer"> <br>
+  </form>
+
+  <script src="javascript.js"></script>
 </body>
 </html>
